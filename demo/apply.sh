@@ -3,7 +3,7 @@
 . $(dirname ${BASH_SOURCE})/../util.sh
 # now we need to apply the CRDs
 
-desc "now to apply the crds"
+desc "now to apply the customResource Definition"
 run "cat ../artifacts/examples/crd.yaml"
 
 run "kubectl create -f ../artifacts/examples/crd.yaml"
